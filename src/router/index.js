@@ -4,8 +4,9 @@ import { getAuth, onAuthStateChanged } from "firebase/auth"
 const router = createRouter({
     history: createWebHistory(),
     routes: [
-        { path: "/", component: () => import("../views/Login.vue") },
-        { path: "/signup", component: () => import("../views/SignUp.vue") },
+        { path: "/signup", component: () => import("../views/NewSignUp.vue") },
+        { path: "/", component: () => import("../views/HomePage.vue") },
+        { path: "/login", component: () => import("../views/NewLogin.vue") },
         {
             path: "/home",
             component: () => import("../views/Home.vue"),
